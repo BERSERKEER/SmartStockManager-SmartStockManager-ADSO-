@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/public/images/logo.png" type="image/gif" sizes="20x20" />
-    <link rel="stylesheet" href="./public/css/landing.css"> <!--Ruta de estilo-->
-    <title>SSM</title>
+    <link rel="stylesheet" href="http://localhost/SmartStockManager-[ADSO]/public/css/landing.css"> <!--Ruta de estilo-->
+    <title>Bienvenido</title>
 </head>
 <body>
 	<!-- Navbar -->
@@ -17,7 +17,7 @@
 				<li><a href="#Product">Productos</a></li>
 				<li><a href="#Location">Ubicacion</a></li>
 				<li><a href="#Contact">Contacto</a></li>
-				<li><a href="http://localhost/SSM/views/signup.php" class="log">Inciar sesion</a></li>
+				<li><a href="http://localhost/SmartStockManager-[ADSO]/views/login.php" class="log">Inciar sesion</a></li>
 			</ul>
 		</div>
 	</nav>
@@ -115,40 +115,21 @@
 	</section>
 
 	<!-- Footer -->
-	<footer class="footer">
-		<div class="container">
-			<div class="footer-row">
-				<div class="footer-links">
-					<h4>Compañia</h4>
-					<ul>
-						<li><a href="#">Nosotros</a></li>
-						<li><a href="#">Nuestros servicios</a></li>
-						<li><a href="#">Politica de privacidad</a></li>
-					</ul>
-				</div>
-				<div class="footer-links">
-					<h4>Soporte</h4>
-					<ul>
-						<li><a href="#">Nosotros</a></li>
-						<li><a href="#">Nuestros servicios</a></li>
-					</ul>
-				</div>
-				<div class="footer-links">
-					<h4>Soporte</h4>
-					<ul>
-						<li><a href="#">Correo electronico</a></li>
-					</ul>
-				</div>
-				<div class="footer-links">
-					<h4>siganos en:</h4>
-					<div class="social-link">
-						<a href=""><i class="bi bi-facebook"></i></a>
-						<a href=""><i class="bi bi-whatsapp"></i></a>
-						<a href=""><i class="bi bi-envelope-at"></i></a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</footer>
+	<footer>
+        <div class="footer-content">
+            <h3>code opacity</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo iste corrupti doloribus odio sed!</p>
+            <ul class="socials">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>copyright &copy;2020 codeOpacity. designed by <span>nethunt</span></p>
+        </div>
+    </footer>
 </body>
 </html>

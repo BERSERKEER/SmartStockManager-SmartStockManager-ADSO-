@@ -1,6 +1,4 @@
 <?php
-// index.php
-
 // Incluir el controlador necesario
 require_once 'controllers/HomeController.php';
 
