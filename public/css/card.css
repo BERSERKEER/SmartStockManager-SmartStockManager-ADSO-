@@ -1,0 +1,28 @@
+.container-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas de igual ancho */
+    gap: 1rem; /* Espacio entre las tarjetas */
+}
+
+.card {
+    padding: 1rem;
+    min-block-size: 7rem;
+    background-color: #fff;
+    border-radius: 0.5rem;
+}
+
+.card-1 {
+    background-image: linear-gradient(62deg, #fbab7e 0%, #f7ce68 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-4, .card-5 {
+    background-color: #e0f7fa; /* Un color de fondo diferente para las nuevas tarjetas */
+    border: 1px solid #00796b; /* Borde para resaltar la tarjeta */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
