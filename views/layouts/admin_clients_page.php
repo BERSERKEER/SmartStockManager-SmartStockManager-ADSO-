@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Productos</title>
+    <title>Clientes</title>
+    <!-- Ruta de Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="../public/css/admin_product.css">
-   
+    <!-- Ruta de estilo -->
+    <link rel="stylesheet" href="../public/css/admin_clients_style.css">
 </head>
 <body>
     <header class="dashboard-header">
-        <h1>Administrador - Productos</h1>
+        <h1>Administrador - Clientes</h1>
         <div class="user-actions">
             <h2>[Administrador]</h2>
             <h1>Nombre usuario</h1>
@@ -58,79 +59,72 @@
     <main class="dashboard-main">
     <div class="dashboard-title">
         <h2>Productos</h2>
-        <div class="search-bar">
+        <div class="tools-group">
             <button type="button">Añadir</button>
             <button type="button">Editar</button>
             <button type="button">Eliminar</button>
-
-            <div class="tools-group">
-            <input type="text" placeholder="Buscar productos..." />
-            <button type="button">Buscar</button>
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar productos..." />
+                <button type="button">Buscar</button>
             </div>
         </div>
     </div>
+
         <div class="card">
-        <img src="../public/img/log.png" alt="Producto 1">
-            <h3 class="product-title">Producto 1</h3>
-            <p class="product-description">Descripción del producto 1.</p>
-            <p class="product-price">$10.00</p>
-            <input type="checkbox" class="product-checkbox"> Seleccionar
-        </div>
-        <div class="card">
-            <h3>Producto 2</h3>
-            <p>Descripción del producto 2</p>
-        </div>
-        <div class="card">
-            <h3>Producto 3</h3>
-            <p>Descripción del producto 3</p>
-        </div>
-        <div class="card">
-            <h3>Producto 4</h3>
-            <p>Descripción del producto 4</p>
-        </div>
-        <div class="card">
-            <h3>Producto 5</h3>
-            <p>Descripción del producto 5</p>
-        </div>
-        <div class="card">
-            <h3>Producto 6</h3>
-            <p>Descripción del producto 6</p>
-        </div>
-        <div class="card">
-            <h3>Producto 4</h3>
-            <p>Descripción del producto 4</p>
-        </div>
-        <div class="card">
-            <h3>Producto 5</h3>
-            <p>Descripción del producto 5</p>
-        </div>
-        <div class="card">
-            <h3>Producto 6</h3>
-            <p>Descripción del producto 6</p>
-        </div>
-        <div class="card">
-            <h3>Producto 4</h3>
-            <p>Descripción del producto 4</p>
-        </div>
-        <div class="card">
-            <h3>Producto 5</h3>
-            <p>Descripción del producto 5</p>
-        </div>
-        <div class="card">
-            <h3>Producto 6</h3>
-            <p>Descripción del producto 6</p>
-        </div>
-        <div class="card">
-            <h3>Producto 4</h3>
-            <p>Descripción del producto 4</p>
-        </div>
-        <div class="card">
-            <h3>Producto 5</h3>
-            <p>Descripción del producto 5</p>
-        </div>
-        <div class="card">
-            <h3>Producto 6</h3>
-            <p>Descripción del producto 6</p>
+        <div class="filter-container">
+        <input type="text" id="nameFilter" placeholder="Filtrar por nombre">
+        <input type="text" id="surnameFilter" placeholder="Filtrar por apellido">
+        <input type="text" id="phoneFilter" placeholder="Filtrar por teléfono">
+        <input type="text" id="emailFilter" placeholder="Filtrar por correo">
+    </div>
+
+    <table id="dataTable">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Teléfono</th>
+                <th>Correo</th>
+                <th>Opciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td>Juan</td>
+                <td>Pérez</td>
+                <td>123456789</td>
+                <td>juan.perez@example.com</td>
+                <td class="action-buttons">
+                    <button class="edit-button">Editar</button>
+                    <button class="delete-button">Eliminar</button>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td>Ana</td>
+                <td>Gómez</td>
+                <td>987654321</td>
+                <td>ana.gomez@example.com</td>
+                <td class="action-buttons">
+                    <button class="edit-button">Editar</button>
+                    <button class="delete-button">Eliminar</button>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td>Pedro</td>
+                <td>Rodríguez</td>
+                <td>456123789</td>
+                <td>pedro.rodriguez@example.com</td>
+                <td class="action-buttons">
+                    <button class="edit-button">Editar</button>
+                    <button class="delete-button">Eliminar</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
         </div>
     </main>
 

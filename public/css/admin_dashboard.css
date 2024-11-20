@@ -147,12 +147,6 @@ h2, h5 {
   background-color: #45a049;
 }
 
-.user-pic {
-  width: 40px;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
 .sub-menu-wrap {
   position: absolute;
   top: 12%;
@@ -165,6 +159,14 @@ h2, h5 {
 
 .sub-menu-wrap.open-menu {
   max-height: 400px;
+}
+
+.sub-menu hr{
+  border: 0;
+  height: 1px;
+  width: 100%;
+  background-color: #ccc;
+  margin: 15px 0;
 }
 
 .sub-menu {
@@ -213,4 +215,32 @@ h2, h5 {
   color: black;     /* Cambia este color según el fondo de tu dashboard */
   text-align: center;
   margin-top: 10px;
+}
+
+
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Profile circle */
+.profile-circle {
+  width: 50px;
+  height: 50px;
+  background-color: #4285f4; /* Azul tipo Google */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%; /* Hace el div circular */
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none; /* Evita la selección del texto */
+  transition: background-color 0.3s ease;
+}
+
+.profile-circle:hover {
+  background-color: #357ae8; /* Efecto hover */
 }

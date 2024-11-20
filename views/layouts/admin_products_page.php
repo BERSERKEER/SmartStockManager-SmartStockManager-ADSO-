@@ -3,32 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Empleados</title>
+    <title>Inicio</title>
+    <link rel="icon" href="../public/img/" type="image/x-icon">
+    <!-- Ruta de librerias-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Ruta de estilos -->
+    <link rel="stylesheet" href="../public/css/admin_product.css">
+    <link rel="stylesheet" href="../public/css/admin_header.css">
+    <!--Rutas de js-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="../public/js/admin_functions.js" defer></script>
 </head>
 <body>
-    <header class="dashboard-header">
-        <h1>Administrador - Productos</h1>
-        <div class="user-actions">
-            <h2>[Administrador]</h2>
-            <h1>Nombre usuario</h1>
-            <img src="https://banner2.cleanpng.com/20190227/zox/kisspng-clip-art-computer-icons-openclipart-user-vector-gr-my-svg-png-icon-free-download-14-352-onlinewe-1713904397626.webp"
-                class="user-pic" onclick="toggleMenu()">
-            <div class="sub-menu-wrap" id="subMenu">
-                <div class="sub-menu">
-                    <div class="user-info">
-                        <img src="https://banner2.cleanpng.com/20190227/zox/kisspng-clip-art-computer-icons-openclipart-user-vector-gr-my-svg-png-icon-free-download-14-352-onlinewe-1713904397626.webp">
-                        <h2>Nombre de usuario</h2>
-                    </div>
-                    <hr>
-                    <a href="#" class="sub-menu-link">
-                        <img src="https://banner2.cleanpng.com/20190227/zox/kisspng-clip-art-computer-icons-openclipart-user-vector-gr-my-svg-png-icon-free-download-14-352-onlinewe-1713904397626.webp">
-                        <p>Edit</p>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </header>
-
+<!--Temporal-->
+    <?php 
+include '../views/layouts/admin_header.php'; 
+?>
+    
+    <!--Lateral menu-->
     <aside class="dashboard-sidebar">
         <div class="logo">
             <a href="./admin_home_pages.php">
@@ -53,11 +45,36 @@
     </aside>
 
     <main class="dashboard-main">
-        <div class="dashboard-title">
-            <h2>Productos</h2>
-        </div>
+    <div class="dashboard-title">
+        <h2>Productos</h2>
+        <div class="tools-group">
+    <div class="search-bar">
+        <input type="text" placeholder="Buscar productos..." />
+        <button type="button">
+            Buscar
+            <img src="../public/img/search.svg" alt="Buscar">
+        </button>
+    </div>
+
+    <!-- Nuevos botones con imagen y texto -->
+    <button type="button" class="btn-with-icon">
+        <img src="../public/img/home-icon.svg" alt="" class="button-icon">
+        <span class="button-text">Agregar</span>
+    </button>
+    <button type="button" class="btn-with-icon">
+        <img src="../public/img/trash-fill.svg" alt="" class="button-icon">
+        <span class="button-text">Elimnar</span>
+    </button>
+    <button type="button" class="btn-with-icon">
+        <img src="../public/img/user-icon.svg" alt="" class="button-icon">
+        <span class="button-text">Editar</span>
+    </button>
+</div>
+
+    </div>
+    </div>
         <div class="card">
-        <img src="../public/img/log.png" alt="Producto 1">
+        <img src="../public/img/cart3.svg" alt="Producto 1">
             <h3 class="product-title">Producto 1</h3>
             <p class="product-description">Descripción del producto 1.</p>
             <p class="product-price">$10.00</p>

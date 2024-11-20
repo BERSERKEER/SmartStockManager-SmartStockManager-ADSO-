@@ -3,15 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clientes</title>
-    <!-- Ruta de Bootstrap Icons -->
+    <title>Reportes</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <!-- Ruta de estilo -->
-    <link rel="stylesheet" href="../public/css/admin_clients_style.css">
+    <link rel="stylesheet" href="../public/css/admin_reports.css">
 </head>
 <body>
     <header class="dashboard-header">
-        <h1>Administrador - Clientes</h1>
+        <h1>Administrador - Reportes</h1>
         <div class="user-actions">
             <h2>[Administrador]</h2>
             <h1>Nombre usuario</h1>
@@ -57,16 +55,19 @@
     </aside>
 
     <main class="dashboard-main">
-        <div class="dashboard-title">
-            <h2>Productos</h2>
+    <div class="dashboard-title">
+        <h2>Productos</h2>
+        <div class="tools-group">
+            <button type="button">Añadir</button>
+            <button type="button">Editar</button>
+            <button type="button">Eliminar</button>
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar productos..." />
+                <button type="button">Buscar</button>
+            </div>
         </div>
-        <div class="card">
-        <img src="../public/img/log.png" alt="Producto 1">
-            <h3 class="product-title">Producto 1</h3>
-            <p class="product-description">Descripción del producto 1.</p>
-            <p class="product-price">$10.00</p>
-            <input type="checkbox" class="product-checkbox"> Seleccionar
-        </div>
+    </div>
+
         <div class="card">
         <div class="filter-container">
         <input type="text" id="nameFilter" placeholder="Filtrar por nombre">
@@ -122,10 +123,6 @@
             </tr>
         </tbody>
     </table>
-        </div>
-        <div class="card">
-            <h3>Producto 3</h3>
-            <p>Descripción del producto 3</p>
         </div>
     </main>
 

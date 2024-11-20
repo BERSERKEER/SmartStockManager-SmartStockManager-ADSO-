@@ -15,7 +15,6 @@ body {
   grid-template-columns: 5rem 1fr;
   grid-template-rows: auto 1fr auto;
   grid-template-areas:
-      "sidebar header"
       "sidebar main"
       "sidebar footer";
   transition: grid-template-columns 0.3s ease;
@@ -31,15 +30,6 @@ h1 {
 
 h2, h5 {
   font-size: 0.875rem;
-}
-
-.dashboard-header {
-  grid-area: header;
-  background-color: #fff;
-  padding: 1.25rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .dashboard-footer {
@@ -162,8 +152,14 @@ h2, h5 {
   border-bottom: 2px solid #ddd;
   text-align: center;
   display: flex;
-  justify-content: space-between; /* Para separar el título y la barra de búsqueda */
+  justify-content: space-between; /* Para separar el título, barra de búsqueda y botones */
   align-items: center;
+}
+
+.tools-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* Espacio entre los botones y la barra de búsqueda */
 }
 
 .search-bar {
@@ -193,11 +189,50 @@ h2, h5 {
   background-color: #0056b3;
 }
 
-.tools-group{
-  margin-left: 20px;
+/* Estilo para los botones con imagen y texto */
+.btn-with-icon {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  gap: 0.5rem; /* Espacio entre la imagen y el texto */
 }
+
+.btn-with-icon:hover {
+  background-color: #218838;
+}
+
+.button-icon {
+  width: 20px; /* Tamaño de la imagen */
+  height: 20px;
+}
+
+.button-text {
+  font-size: 1rem;
+}
+
+.tools-group button:nth-child(2) {
+  background-color: #357ae8;
+}
+
+.tools-group button:nth-child(2):hover {
+  background-color: #e0a800;
+}
+
+.tools-group button:nth-child(3) {
+  background-color: #dc3545;
+}
+
+.tools-group button:nth-child(3):hover {
+  background-color: #c82333;
+}
+
+
 
 .card {
   background-color: white;

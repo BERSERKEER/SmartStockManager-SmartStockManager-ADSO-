@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reportes</title>
+    <title>Empleados</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../public/css/admin_product.css">
 </head>
 <body>
     <header class="dashboard-header">
-        <h1>Administrador - Productos</h1>
+        <h1>Administrador - Empleados</h1>
         <div class="user-actions">
             <h2>[Administrador]</h2>
             <h1>Nombre usuario</h1>
@@ -54,7 +56,7 @@
 
     <main class="dashboard-main">
         <div class="dashboard-title">
-            <h2>Productos</h2>
+            <h2>Empleados</h2>
         </div>
         <div class="card">
         <img src="../public/img/log.png" alt="Producto 1">
