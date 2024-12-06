@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Inicio sesión</title>
-	<link rel="stylesheet" href="../public/css/login_styles.css">
+	<link rel="stylesheet" href="../public/css/login.css">
 </head>
 <body>
 	<main class="login-container">

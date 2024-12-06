@@ -4,7 +4,7 @@
 class HomeController {
     public function index() {
         // Cargar la vista 'home'
-        require_once 'views/layouts/landing.php';
+        require_once 'views/layouts/login.php';
     }
 }
 ?>

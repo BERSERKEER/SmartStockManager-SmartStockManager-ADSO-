@@ -32,18 +32,18 @@
         </div>
     </div>
 
-     <!-- Sección: Servicios -->
+     <!-- Sección: Quienes somos -->
      <div id="services" class="services">
-        <h2>Nuestros Servicios</h2>
-        <p>En SSM Repuestos, ofrecemos más que solo repuestos. Nos especializamos en brindar asesoría experta para el mantenimiento y reparación de vehículos. Ya sea que busques mejorar el rendimiento de tu automóvil o mantenerlo en óptimas condiciones, nuestros técnicos capacitados están aquí para ayudarte.</p>
-        <p>Contamos con un amplio catálogo de piezas y componentes para automóviles de diferentes marcas y modelos, tanto nacionales como importados. Además, ofrecemos servicios de instalación y revisión mecánica para garantizar que tu vehículo esté siempre en las mejores manos.</p>
-    </div>
-
-    <!-- Sección: Quiénes Somos -->
-    <div id="about-us" class="about-us">
         <h2>Quiénes Somos</h2>
         <p>En SSM Repuestos somos una empresa dedicada a ofrecer los mejores productos y servicios para el mantenimiento y reparación de vehículos. Desde hace más de 10 años, nos hemos consolidado como uno de los principales proveedores de repuestos en la región, siempre comprometidos con la calidad y satisfacción del cliente.</p>
         <p>Contamos con un equipo altamente capacitado y apasionado por la industria automotriz, que está siempre listo para brindar asesoramiento especializado y soluciones a medida para cada cliente.</p>
+    </div>
+
+    <!-- Sección: Servicios-->
+    <div id="about-us" class="about-us">
+        <h2>Nuestros Servicios</h2>
+        <p>En SSM Repuestos, ofrecemos más que solo repuestos. Nos especializamos en brindar asesoría experta para el mantenimiento y reparación de vehículos. Ya sea que busques mejorar el rendimiento de tu automóvil o mantenerlo en óptimas condiciones, nuestros técnicos capacitados están aquí para ayudarte.</p>
+        <p>Contamos con un amplio catálogo de piezas y componentes para automóviles de diferentes marcas y modelos, tanto nacionales como importados. Además, ofrecemos servicios de instalación y revisión mecánica para garantizar que tu vehículo esté siempre en las mejores manos.</p>
 
         <!-- Imágenes y títulos -->
         <div class="image-gallery">
@@ -59,14 +59,37 @@
                 <img src="./public/img/gear-solid.svg" alt="Imagen 3" class="icon-gear">
                 <h3>Título 3</h3>
             </div>
+            <div class="image-item">
+                <img src="./public/img/gear-solid.svg" alt="Imagen 3" class="icon-gear">
+                <h3>Título 3</h3>
+            </div>
         </div>
     </div>
 
-    <!-- Sección: Productos -->
-    <div id="products" class="products">
-        <h2>Productos</h2>
-        <p>Nuestros productos incluyen soluciones personalizadas, plataformas de gestión, y aplicaciones móviles adaptadas a las necesidades del cliente.</p>
+ <!-- Sección: Productos -->
+<div id="products" class="products">
+    <h2>Productos</h2>
+    <p>En SSM Repuestos, ofrecemos una amplia gama de productos para satisfacer las necesidades de mantenimiento y reparación de vehículos. A continuación, algunos de nuestros productos más destacados:</p>
+
+    <div class="product-gallery">
+        <div class="product-item">
+            <img src="./public/img/x.svg" alt="Filtro de Aire">
+            <h3>Filtro de Aire</h3>
+            <p>Un filtro de aire de alta calidad para garantizar un rendimiento óptimo del motor.</p>
+        </div>
+        <div class="product-item">
+            <img src="./public/img/x.svg" alt="Batería Automotriz">
+            <h3>Batería Automotriz</h3>
+            <p>Batería de larga duración con tecnología avanzada para arranques más seguros.</p>
+        </div>
+        <div class="product-item">
+            <img src="./public/img/x.svg" alt="Pastillas de Freno">
+            <h3>Pastillas de Freno</h3>
+            <p>Pastillas de freno que proporcionan una excelente capacidad de frenado y seguridad.</p>
+        </div>
     </div>
+</div>
+
 
 
      <!-- Sección: Dónde Estamos -->

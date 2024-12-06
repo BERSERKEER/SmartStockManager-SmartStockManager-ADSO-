@@ -7,7 +7,6 @@
     --bg-color-dark: #1a1a1a;
     --bg-color-light: #f2f2f2;
     --font-size-base: 16px;
-    --font-family: 'Arial', sans-serif;
     --padding: 10px;
 }
 
@@ -15,6 +14,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Noto Sans', italic;
+    font-weight: 400;
 }
 
 /* Contenedor */
@@ -41,6 +42,7 @@
 
 .navbar.sticky ul li a {
     color: var(--bg-black);
+    font-family: 'Noto Sans', sans-serif;
 }
 
 .navbar.sticky h1 {
@@ -236,7 +238,7 @@
 .location {
     width: 100%;
     padding: 60px 80px;
-    background-color: var(--bg-color-light);
+    background-color: var(--bg-color-dark);
     color: var(--bg-white);
     text-align: center;
 }
@@ -274,6 +276,35 @@
     line-height: 1.6;
 }
 
+.product-gallery {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.product-item {
+    width: 30%;
+    text-align: center;
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-item h3 {
+    font-size: 24px;
+    margin-top: 15px;
+}
+
+.product-item p {
+    font-size: 16px;
+    margin-top: 10px;
+    color: var(--bg-black-light);
+}
+
 /* Footer */
 .footer {
     width: 100%;
@@ -291,8 +322,8 @@
 .contact-form {
     width: 100%;
     padding: 60px 80px;
-    background-color: var(--bg-color-light);
-    color: var(--bg-black);
+    background-color: #ffffff; /* Fondo blanco */
+    color: #000000; /* Texto negro */
     text-align: left;
 }
 
@@ -300,11 +331,16 @@
     font-size: 36px;
     margin-bottom: 20px;
     text-align: center;
+    color: #000000; /* Texto negro */
 }
 
 .contact-form form {
     max-width: 600px;
     margin: 0 auto;
+    background-color: #f5f5f5; /* Fondo gris claro para el formulario */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
 }
 
 .form-group {
@@ -315,38 +351,40 @@
     display: block;
     font-size: 18px;
     margin-bottom: 5px;
+    color: #333333; /* Texto gris oscuro */
 }
 
 .form-group input,
 .form-group textarea {
     width: 100%;
     padding: 10px;
-    border: none;
+    border: 1px solid #cccccc; /* Borde gris claro */
     border-radius: 5px;
     font-size: 16px;
+    background-color: #ffffff; /* Fondo blanco */
+    color: #333333; /* Texto gris oscuro */
 }
 
-.form-group input {
-    height: 40px;
-}
-
-.form-group textarea {
-    resize: vertical;
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #ff4d4d; /* Borde rojo al enfocar */
+    box-shadow: 0 0 5px rgba(255, 77, 77, 0.5); /* Sombra roja */
 }
 
 button[type="submit"] {
     padding: 12px 20px;
-    background-color: #5d88d5;
+    background-color: #ff4d4d; /* Botón rojo */
     border: none;
     border-radius: 5px;
-    color: var(--bg-color-light);
+    color: #ffffff; /* Texto blanco */
     font-size: 18px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 button[type="submit"]:hover {
-    background-color: #2d88d5;
+    background-color: #cc0000; /* Rojo más oscuro al pasar el ratón */
 }
 
 
@@ -373,6 +411,35 @@ button[type="submit"]:hover {
     font-size: 18px;
 }
 
-.icon-gear{
-    fill: red;
+/* Fuentes */
+/* Regular */
+@font-face {
+    font-family: 'Roboto';
+    src: url('/public/fonts/NotoSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Italic */
+@font-face {
+    font-family: 'Roboto';
+    src: url('/public/fonts/NotoSans-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+/* Bold */
+@font-face {
+    font-family: 'Roboto';
+    src: url('/public/fonts/NotoSans-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Bold Italic */
+@font-face {
+    font-family: 'Roboto';
+    src: url('/public/fonts/NotoSans-Regular.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
 }
